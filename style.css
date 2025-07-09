@@ -1,0 +1,70 @@
+
+ body {
+  font-family: Arial;
+  margin: 0;
+  /* background-image: url('charusat.png'); */
+  background-size: cover;
+  /* background-color: rgba(204, 231, 240, 0.892); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.header {
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #007acc;
+}
+
+.header img {
+  height: 60px;
+}
+
+.navbar {
+  background-color: #007acc;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: #005f99;
+}
+
+.section {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 30px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 8px;
+  border: 2px solid #a9c4df;
+}
+
+table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    } 
+
