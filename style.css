@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #007acc;
+}
+
+.header img {
+  height: 60px;
+  max-width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #007acc;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: #005f99;
+}
+
+/* Section */
+.section {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 30px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 8px;
+  border: 2px solid #a9c4df;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Achievements Images */
+.section img {
+  max-width: 200px;
+  height: auto;
+  margin: 10px;
+}
+
+/* Forms */
+form p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+form input {
+  padding: 5px;
+  flex: 1;
+  min-width: 200px;
+  margin-top: 5px;
+}
+
+button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005f99;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  /* Navbar becomes vertical */
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-left, .nav-right {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar a {
+    text-align: center;
+  }
+
+  /* Forms stack labels and inputs */
+  form p {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  form input {
+    width: 100%;
+  }
+
+  /* Tables scroll horizontally */
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* Achievements stack vertically */
+  .section img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+}
