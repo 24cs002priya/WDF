@@ -1,160 +1,36 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>Login</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-
-body {
-  font-family: Arial;
-  margin: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  text-align: center;
-}
-
-
-.header {
-  background-color: white;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid #007acc;
-  flex-wrap: wrap;
-}
-
-.header img {
-  height: 60px;
-  max-width: 100%;
-}
-
-
-.navbar {
-  background-color: #007acc;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.nav-left,
-.nav-right {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.navbar a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.navbar a:hover {
-  background-color: #005f99;
-}
-
-
-.section {
-  background-color: rgba(255, 255, 255, 0.9);
-  margin: 30px auto;
-  padding: 20px;
-  width: 90%;
-  max-width: 700px;
-  border-radius: 8px;
-  border: 2px solid #a9c4df;
-  box-sizing: border-box;
-  text-align: left;
-}
-
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-form p {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
-  margin: 10px 0;
-}
-
-label {
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing:
-
-
-
-  </style>
 </head>
 <body>
+
+  <!-- Header with logos -->
   <div class="header">
-    <img src="charusatlogo.png" alt="University Logo">
-    <img src="cspitlogo.png" alt="College Logo">
+    <img src="charusatlogo.png" alt="University Logo" class="logo-left">
+    <img src="cspitlogo.png" alt="College Logo" class="logo-right">
   </div>
+
+  <!-- Login Section -->
   <div class="section">
     <h2>Login Page</h2>
-    <form action="homeee.html" method="get">
-      <p>Username: <input type="text" required></p>
-      <p>Password: <input type="password" required></p>
-      <p><button type="submit">Login</button></p>
+    <form action="home.html" method="get">
+      <p>
+        Username: 
+        <input type="text" required>
+      </p>
+      <p>
+        Password: 
+        <input type="password" required>
+      </p>
+      <p>
+        <button type="submit">Login</button>
+      </p>
     </form>
   </div>
+
 </body>
 </html>
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <title>Login</title>
-  <link rel="stylesheet" href="style.css">
-  <script>
-    function checkLogin(event) {
-      event.preventDefault(); 
 
-      const username = document.getElementById("username").value;
-      const password = document.getElementById("password").value;
 
-      const correctUsername = "24cs002";
-      const correctPassword = "12345";
-
-      if (username === correctUsername && password === correctPassword) {
-        
-        window.location.href = "home.html";
-      } else {
-        alert("Invalid username or password. Please try again.");
-      }
-    }
-  </script>
-</head>
-<body>
-  <div class="header">
-    <img src="charusatlogo.png" alt="University Logo">
-    <img src="cspitlogo.png" alt="College Logo">
-  </div>
-
-  <div class="section">
-    <h2>Login Page</h2>
-    <form onsubmit="checkLogin(event)">
-      <p>Username: <input type="text" id="username" required></p>
-      <p>Password: <input type="password" id="password" required></p>
-      <p><button type="submit">Login</button></p>
-    </form>
-  </div>
-</body>
-</html>
- -->
