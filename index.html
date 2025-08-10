@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <img src="charusatlogo.png" alt="University Logo" class="logo-left">
+    <img src="cspitlogo.png" alt="College Logo" class="logo-right">
+  </div>
+
+  <div class="section">
+    <h2>Login Page</h2>
+    <form id="loginForm" novalidate>
+      <p>
+        Username:
+        <input type="text" id="username" required>
+      </p>
+      <p>
+        Password:
+        <input type="password" id="password" required>
+      </p>
+      <p>
+        <button type="submit">Login</button>
+      </p>
+      <div id="error" style="color: #b00020; display:none;"></div>
+    </form>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const CORRECT_USER = 'webdev';
+      const CORRECT_PASS = 'cspitcse';
+      const form = document.getElementById('loginForm');
+      const userInput = document.getElementById('username');
+      const passInput = document.getElementById('password');
+      const errorBox = document.getElementById('error');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const user = userInput.value.trim();
+        const pass = passInput.value;
+        if (!user || !pass) {
+          showError('Please enter both username and password.');
+          return;
+        }
+        if (user === CORRECT_USER && pass === CORRECT_PASS) {
+          window.location.href = 'home.html';
+        } else {
+          showError('Invalid username or password.');
+        }
+      });
+
+      function showError(msg) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>

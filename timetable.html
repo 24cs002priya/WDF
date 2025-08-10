@@ -1,0 +1,197 @@
+<<!DOCTYPE html>
+<html>
+<head>
+  <title>Time Table</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+ 
+body {
+  font-family: Arial;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+
+.header {
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #007acc;
+  flex-wrap: wrap;
+}
+
+.header img {
+  height: 60px;
+  max-width: 100%;
+}
+
+
+.navbar {
+  background-color: #007acc;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: #005f99;
+}
+
+
+.section {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 30px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 1200px; 
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+
+.section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.section th,
+.section td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.section table {
+  overflow-x: auto;
+  display: block;
+  white-space: nowrap;
+}
+
+.section table::-webkit-scrollbar {
+  height: 8px;
+}
+
+.section table::-webkit-scrollbar-thumb {
+  background-color: #007acc;
+  border-radius: 4px;
+}
+
+.section table::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+
+@media (max-width: 768px) {
+ 
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header img {
+    margin: 10px 0;
+    height: auto;
+    max-height: 60px;
+    max-width: 90%;
+  }
+
+  
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-left, .nav-right {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar a {
+    padding: 10px;
+    width: 100%;
+  }
+  .section {
+    width: 95%;
+    padding: 15px;
+  }
+
+  
+  .section table {
+    font-size: 0.9rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+
+  <div class="header">
+    <img src="charusatlogo.png" alt="University Logo">
+    <img src="cspitlogo.png" alt="College Logo">
+  </div>
+  <div class="navbar">
+    <div class="nav-left">
+      <a href="index.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="timetable.html">Time Table</a>
+      <a href="attendance.html">Attendance</a>
+      <a href="achievement.html">Achievements</a>
+      <a href="result.html">Result</a>
+      <a href="fees.html">Fees</a>
+      <a href="leave.html">Leave App</a>
+      <a href="course.html">Course Reg</a>
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Logout</a>
+    </div>
+  </div>
+
+  
+  <div class="section">
+    <h2>Time Table</h2>
+    <table>
+      <tr>
+        <th>Time/Day</th>
+        <th>9:10 - 10:10</th>
+        <th>10:10 - 11:10</th>
+        <th>11:10 - 12:10</th>
+        <th>12:10 - 1:10</th>
+        <th>1:10 - 2:10</th>
+        <th>2:10 - 2:20</th>
+        <th>2:20 - 3:20</th>
+        <th>3:20 - 4:20</th>
+      </tr>
+      <tr><td>Monday</td><td>DSA</td><td>OOP</td><td rowspan="5">BREAK</td><td>CN</td><td>MATHS</td><td rowspan="5">BREAK</td><td colspan="2">WDF LAB</td></tr>
+      <tr><td>Tuesday</td><td>OOP</td><td>CN</td><td colspan="2">CN LAB</td><td>CN</td><td>WDF</td></tr>
+      <tr><td>Wednesday</td><td>WDF</td><td>DSA</td><td>CN</td><td>MATHS</td><td>OOP</td><td>SPORTS</td></tr>
+      <tr><td>Thursday</td><td>LAB</td><td>LAB</td><td>DSA</td><td>MATHS</td><td>CN</td><td>OOP</td></tr>
+      <tr><td>Friday</td><td>MATHS</td><td>CN</td><td>OOP</td><td>DSA</td>  <td>WDF</td><td>LAB</td></tr>
+    </table>
+  </div>
+
+</body>
+</html>
